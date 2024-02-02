@@ -22,6 +22,7 @@ function page() {
   return (  
     <div>
       {product.length === 0 && <h3>Loading....</h3>}
+      
       {product.map(({id,title,image})=> {
         return <div key={id}>
           <h1>{title}</h1>
